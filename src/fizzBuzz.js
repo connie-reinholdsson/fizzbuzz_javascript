@@ -1,16 +1,13 @@
-function fizzBuzz(i) {
-  // for (i = 1; i < 101; i++) {
-    if ((i % 3 == 0) && (i % 5 == 0)) {
-      return "fizzbuzz";
-    }
-    else if (i % 3 == 0) {
-      return "fizz";
-    }
-    else if (i % 5 == 0) {
-      return "buzz";
-    }
-    else {
-      return i;
-    }
-  // }
+function FizzBuzz() {
+
+}
+
+FizzBuzz.prototype.play = function(number) {
+  if (this._isDivisibleBy(3, number)) {
+    return 'Fizz';
+  }
+}
+
+FizzBuzz.prototype._isDivisibleBy = function(divisor, number) {
+  return number % divisor === 0;
 }

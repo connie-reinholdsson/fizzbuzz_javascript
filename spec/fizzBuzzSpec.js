@@ -1,15 +1,13 @@
-describe("#fizzBuzz", function() {
-  it("prints fizz if divisible by 3", function() {
-    expect(fizzBuzz(9)).toBe("fizz");
-  });
-// });
+describe('FizzBuzz', function() {
+  var fizzBuzz;
 
-// describe("#fizzBuzz", function() {
-  it ("prints fizz if divisible by 5", function() {
-    expect(fizzBuzz(10)).toEqual("buzz");
+  beforeEach(function() {
+    fizzBuzz = new FizzBuzz();
   });
 
-  it ("prints fizzbuzz if divisible by 3 and 5", function () {
-    expect(fizzBuzz(15)).toEqual("fizzbuzz");
+  describe('multiples of 3', function() {
+    it('fizzes for 3', function() {
+      expect(fizzBuzz.play(3)).toEqual('Fizz');
+    });
   });
 });
