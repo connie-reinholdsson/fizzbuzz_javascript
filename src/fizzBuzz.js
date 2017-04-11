@@ -9,6 +9,8 @@ FizzBuzz.prototype.play = function(number) {
     return 'Buzz';
   } else if (this._isDivisibleBy(3, number)) {
     return 'Fizz';
+  } else {
+    return number
   }
 }
 

@@ -23,4 +23,10 @@ describe('FizzBuzz', function() {
     });
   });
 
+  describe('any other number', function() {
+    it('returns number', function() {
+      expect(fizzBuzz.play(7)).toEqual(7);
+    });
+  });
+
 });
