@@ -29,4 +29,10 @@ describe('FizzBuzz', function() {
     });
   });
 
+  describe('if equal to 0', function() {
+    it('returns 0', function() {
+      expect(fizzBuzz.play(0)).toEqual(0);
+    });
+  });
+
 });
